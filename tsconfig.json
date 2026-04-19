@@ -3,6 +3,7 @@
         "module": "commonjs",
         "target": "es6",
         "moduleResolution": "node",
+        "ignoreDeprecations": "5.0",
         "declaration": true,
         "outDir": "dist",
         "rootDir": "./",
@@ -18,7 +19,8 @@
     ],
     "exclude": [
         "node_modules",
-        "dist"
+        "dist",
+        "**/*.spec.ts"
     ],
     "compileOnSave": true
 }
